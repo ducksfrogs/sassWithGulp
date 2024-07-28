@@ -59,7 +59,7 @@ const htmls = function() {
     const plugins = [
         autoprefixer(),
         cssdeclaretionsorter(),
-        cssnano(),
+        // cssnano(),
     ];
 
     return gulp.src(
@@ -73,7 +73,7 @@ const htmls = function() {
     )).pipe(postcss(plugins))
     .pipe(rename({
         'basename': 'styles',
-        'suffix': '.min',
+        // 'suffix': '.min',
     })).pipe(gulp.dest(paths.styles.dest)).
     pipe(connect.reload());
 };
