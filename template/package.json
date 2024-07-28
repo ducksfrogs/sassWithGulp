@@ -9,7 +9,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "browser-sync": "^3.0.2",
     "css-declaration-sorter": "^7.2.0",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",

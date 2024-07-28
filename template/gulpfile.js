@@ -8,9 +8,9 @@ const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify');
-// const connect = require('gulp-connect');
+const connect = require('gulp-connect');
 
-const browsersync = require('browser-sync');
+// const browsersync = require('browser-sync');
 
 const paths = {
     'htmls': {
@@ -34,13 +34,16 @@ const paths = {
 };
 
 const server = function() {
-
-    browsersync.create();
-    browsersync.init({
-        server: {
-            baseDir: "./dist"
-        }
+    connect.server({
+        root: 'dist',
+        livereload: true
     });
+    // browsersync.create();
+    // browsersync.init({
+    //     server: {
+    //         baseDir: "./dist"
+    //     }
+    // });
 };
 
 const htmls = function() {
@@ -49,7 +52,7 @@ const htmls = function() {
             'base': paths.htmls.base,
         }).pipe(
             gulp.dest(paths.htmls.dest)
-        );
+        ).pipe(connect.reload());
 };
 
  const styles = function() {
@@ -71,7 +74,8 @@ const htmls = function() {
     .pipe(rename({
         'basename': 'styles',
         'suffix': '.min',
-    })).pipe(gulp.dest(paths.styles.dest));
+    })).pipe(gulp.dest(paths.styles.dest)).
+    pipe(connect.reload());
 };
 
 const scripts = function() {
@@ -85,7 +89,8 @@ const scripts = function() {
         pipe(rename({
             'suffix': '.min',
         })).
-        pipe(gulp.dest(paths.scripts.dest));
+        pipe(gulp.dest(paths.scripts.dest)).
+        pipe(connect.reload());
 };
 
 
@@ -108,8 +113,8 @@ const build = gulp.parallel(
     styles,
     scripts,
     htmls,
-    gulp.series(watch),
     server,
+    gulp.series(watch),
 );
 
 
