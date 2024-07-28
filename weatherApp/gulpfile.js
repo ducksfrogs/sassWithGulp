@@ -15,7 +15,7 @@ const connect = require('gulp-connect');
 const paths = {
     'htmls': {
         'base': 'src/',
-        'src': 'src/index.html',
+        'src': 'src/*.html',
         'dest': 'dist',
         'watch': 'src/*.html',
     },
