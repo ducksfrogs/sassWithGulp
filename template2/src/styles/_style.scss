@@ -1,0 +1,17 @@
+$blue: #3bbfce;
+
+$margin: 16px;
+
+.border {
+    padding: $margin / 2;
+    margin: $margin /2;
+    border-color: $blue;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    padding: auto;
+}
