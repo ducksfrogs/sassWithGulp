@@ -1,3 +1,19 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-magin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
+.u-magin-bottom-4 {
+  margin-bottom: 4rem;
+}
+
+.u-magin-bottom-2 {
+  margin-bottom: 2rem;
+}
+
 *,
 *::after,
 *::before {
@@ -6,10 +22,21 @@
   padding: 0;
 }
 
-html {
+:root {
   font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box;
+  background-color: #0f9bbe;
+  color: white;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+svg {
+  height: 5rem;
+  width: 5rem;
 }

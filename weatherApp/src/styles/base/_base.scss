@@ -6,10 +6,20 @@
     box-sizing: inherit;
 }
 
-html {
+:root {
     font-size: 62.5%;
 }
 
 body {
-    box-sizing: border-box;
+    background-color: #0f9bbe;
+    color: white;
 }
+
+p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+
+svg {width: 5rem;
+    height: 5rem;}
