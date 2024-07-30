@@ -34,6 +34,11 @@ body {
   background-color: white;
 }
 
+@media screen and (max-width: 37.5em) {
+  body {
+    background-color: aqua;
+  }
+}
 @media screen and (max-width: 75em) {
   body {
     background-color: maroon;
@@ -42,10 +47,5 @@ body {
 @media screen and (max-width: 56.25em) {
   body {
     background-color: red;
-  }
-}
-@media screen and (max-width: 37.5em) {
-  body {
-    background-color: aqua;
   }
 }
