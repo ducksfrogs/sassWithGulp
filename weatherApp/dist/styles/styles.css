@@ -40,3 +40,33 @@ svg {
   height: 5rem;
   width: 5rem;
 }
+
+::-moz-selection {
+  background-color: #ff70ff;
+  color: #fcc000;
+}
+
+::selection {
+  background-color: #ff70ff;
+  color: #fcc000;
+}
+
+section#weather {
+  margin: 2rem auto 0;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+
+div.weather__info__temp {
+  padding: 4rem;
+}
+
+div.weather__info {
+  display: flex;
+  justify-content: space-evenly;
+}

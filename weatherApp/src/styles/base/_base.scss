@@ -22,4 +22,11 @@ p {
 
 
 svg {width: 5rem;
-    height: 5rem;}
+    height: 5rem;
+    }
+
+
+::selection {
+    color: #fcc000;
+    background-color: #ff70ff;
+}
