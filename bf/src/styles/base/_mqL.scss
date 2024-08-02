@@ -1,19 +1,19 @@
 
-@include resopnd(phone) {
-    body {
-        background-color: aqua;
-    }
-}
+// @include resopnd(phone) {
+//     body {
+//         background-color: aqua;
+//     }
+// }
 
-@include resopnd(tab-land){
-    body {
-        background-color: maroon;
-    };
-}
+// @include resopnd(tab-land){
+//     body {
+//         background-color: maroon;
+//     };
+// }
 
-@include resopnd(tap-port) {
-    body {
-        background-color: red;
-    }
-}
+// @include resopnd(tap-port) {
+//     body {
+//         background-color: red;
+//     }
+// }
 

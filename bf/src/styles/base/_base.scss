@@ -3,17 +3,23 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 
 html {
     font-size: 62.5%;
 }
 
-body {
-    box-sizing: border-box;
+
+
+.main {
+    font-size: 2rem;
+    display: grid;
+    background-color: blue;
+    margin: 4rem;
 }
 
-body {
-    background-color: white;
+.sub {
+    background-color: beige;
+    margin: 2rem;
+    padding: 3rem;
 }

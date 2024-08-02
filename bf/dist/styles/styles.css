@@ -17,7 +17,6 @@
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -26,26 +25,15 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  box-sizing: border-box;
+.main {
+  background-color: blue;
+  display: grid;
+  font-size: 2rem;
+  margin: 4rem;
 }
 
-body {
-  background-color: white;
-}
-
-@media screen and (max-width: 37.5em) {
-  body {
-    background-color: aqua;
-  }
-}
-@media screen and (max-width: 75em) {
-  body {
-    background-color: maroon;
-  }
-}
-@media screen and (max-width: 56.25em) {
-  body {
-    background-color: red;
-  }
+.sub {
+  background-color: beige;
+  margin: 2rem;
+  padding: 3rem;
 }
