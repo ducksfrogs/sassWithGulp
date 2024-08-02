@@ -37,3 +37,24 @@ html {
   margin: 2rem;
   padding: 3rem;
 }
+
+@media screen and (max-width: 75em) {
+  body {
+    background-color: maroon;
+  }
+}
+@media screen and (max-width: 56.25em) {
+  body {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  body {
+    background-color: aqua;
+  }
+}
+@media screen and (min-width: 75.01em) {
+  body {
+    background-color: beige;
+  }
+}
