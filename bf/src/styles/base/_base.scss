@@ -13,13 +13,17 @@ html {
 
 .main {
     font-size: 2rem;
-    display: grid;
+    display: block;
     background-color: blue;
     margin: 4rem;
+    padding: 1rem;
+    @include clearfix;
 }
+
 
 .sub {
     background-color: beige;
+    float: left;
     margin: 2rem;
     padding: 3rem;
 }
